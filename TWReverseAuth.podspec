@@ -7,7 +7,7 @@ Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are
                    DESC
   s.homepage     = "https://github.com/seivan/TWReverseAuth"
 
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.authors      = { "Sean Cook" => "sean.cook@gmail.com", 
                      "Seivan Heidari" => "seivan.heidari@icloud.com",
                      "Nick Walter" => "seivan.heidari@me.com" }
