@@ -1,0 +1,14 @@
+
+PODS:
+- NSData+Base64 (1.0.0)
+- OAuthCore (0.0.1):
+  - NSData+Base64
+
+DEPENDENCIES:
+- OAuthCore (~> 0.0.1)
+
+SPEC CHECKSUMS:
+  NSData+Base64: 8b910cb8a64f45daec6fb15936c36a9a911c57ca
+  OAuthCore: 4164eec5e28c68f794953446e68f91054ffe570c
+
+COCOAPODS: 0.16.4

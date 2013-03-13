@@ -19,9 +19,15 @@
 		225B755B16F0A0AE00D3E3BA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225B755916F0A0AE00D3E3BA /* MainStoryboard_iPhone.storyboard */; };
 		225B755E16F0A0AE00D3E3BA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225B755C16F0A0AE00D3E3BA /* MainStoryboard_iPad.storyboard */; };
 		225B756116F0A0AE00D3E3BA /* SHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 225B756016F0A0AE00D3E3BA /* SHViewController.m */; };
+		22FF66FD16F0AA0300F1B5DE /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF66FA16F0AA0300F1B5DE /* TWAPIManager.m */; };
+		22FF66FE16F0AA0300F1B5DE /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF66FC16F0AA0300F1B5DE /* TWSignedRequest.m */; };
+		22FF670016F0AB7700F1B5DE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FF66FF16F0AB7700F1B5DE /* Social.framework */; };
+		22FF670216F0AB7D00F1B5DE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FF670116F0AB7D00F1B5DE /* Accounts.framework */; };
+		3EA43212773F4A69AE7FF1B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE58D1C8DF204360922E6BE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21B7FA771C65462DBC809C84 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		225B753E16F0A0AE00D3E3BA /* TWReverseAuthExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWReverseAuthExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		225B754116F0A0AE00D3E3BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		225B754316F0A0AE00D3E3BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +45,14 @@
 		225B755D16F0A0AE00D3E3BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		225B755F16F0A0AE00D3E3BA /* SHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHViewController.h; sourceTree = "<group>"; };
 		225B756016F0A0AE00D3E3BA /* SHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHViewController.m; sourceTree = "<group>"; };
+		22FF66F916F0AA0300F1B5DE /* TWAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAPIManager.h; sourceTree = "<group>"; };
+		22FF66FA16F0AA0300F1B5DE /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
+		22FF66FB16F0AA0300F1B5DE /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
+		22FF66FC16F0AA0300F1B5DE /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
+		22FF66FF16F0AB7700F1B5DE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		22FF670116F0AB7D00F1B5DE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		22FF670316F0B53B00F1B5DE /* SHApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHApplication.h; sourceTree = "<group>"; };
+		AE58D1C8DF204360922E6BE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FF670216F0AB7D00F1B5DE /* Accounts.framework in Frameworks */,
+				22FF670016F0AB7700F1B5DE /* Social.framework in Frameworks */,
 				225B754216F0A0AE00D3E3BA /* UIKit.framework in Frameworks */,
 				225B754416F0A0AE00D3E3BA /* Foundation.framework in Frameworks */,
 				225B754616F0A0AE00D3E3BA /* CoreGraphics.framework in Frameworks */,
+				3EA43212773F4A69AE7FF1B4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +75,11 @@
 		225B753516F0A0AE00D3E3BA = {
 			isa = PBXGroup;
 			children = (
+				22FF66F816F0AA0300F1B5DE /* TWReverseAuth */,
 				225B754716F0A0AE00D3E3BA /* TWReverseAuthExample */,
 				225B754016F0A0AE00D3E3BA /* Frameworks */,
 				225B753F16F0A0AE00D3E3BA /* Products */,
+				21B7FA771C65462DBC809C84 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +94,12 @@
 		225B754016F0A0AE00D3E3BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22FF670116F0AB7D00F1B5DE /* Accounts.framework */,
+				22FF66FF16F0AB7700F1B5DE /* Social.framework */,
 				225B754116F0A0AE00D3E3BA /* UIKit.framework */,
 				225B754316F0A0AE00D3E3BA /* Foundation.framework */,
 				225B754516F0A0AE00D3E3BA /* CoreGraphics.framework */,
+				AE58D1C8DF204360922E6BE7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,6 +107,7 @@
 		225B754716F0A0AE00D3E3BA /* TWReverseAuthExample */ = {
 			isa = PBXGroup;
 			children = (
+				22FF670416F0B58300F1B5DE /* Settings */,
 				225B755016F0A0AE00D3E3BA /* SHAppDelegate.h */,
 				225B755116F0A0AE00D3E3BA /* SHAppDelegate.m */,
 				225B755916F0A0AE00D3E3BA /* MainStoryboard_iPhone.storyboard */,
@@ -110,6 +133,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		22FF66F816F0AA0300F1B5DE /* TWReverseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				22FF66F916F0AA0300F1B5DE /* TWAPIManager.h */,
+				22FF66FA16F0AA0300F1B5DE /* TWAPIManager.m */,
+				22FF66FB16F0AA0300F1B5DE /* TWSignedRequest.h */,
+				22FF66FC16F0AA0300F1B5DE /* TWSignedRequest.m */,
+			);
+			path = TWReverseAuth;
+			sourceTree = "<group>";
+		};
+		22FF670416F0B58300F1B5DE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				22FF670316F0B53B00F1B5DE /* SHApplication.h */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +162,7 @@
 				225B753A16F0A0AE00D3E3BA /* Sources */,
 				225B753B16F0A0AE00D3E3BA /* Frameworks */,
 				225B753C16F0A0AE00D3E3BA /* Resources */,
+				6C659C3C8F2C4A18BA801C18 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +216,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C659C3C8F2C4A18BA801C18 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		225B753A16F0A0AE00D3E3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -181,6 +241,8 @@
 				225B754E16F0A0AE00D3E3BA /* main.m in Sources */,
 				225B755216F0A0AE00D3E3BA /* SHAppDelegate.m in Sources */,
 				225B756116F0A0AE00D3E3BA /* SHViewController.m in Sources */,
+				22FF66FD16F0AA0300F1B5DE /* TWAPIManager.m in Sources */,
+				22FF66FE16F0AA0300F1B5DE /* TWSignedRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +336,12 @@
 		};
 		225B756516F0A0AE00D3E3BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B7FA771C65462DBC809C84 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TWReverseAuthExample/TWReverseAuthExample-Prefix.pch";
 				INFOPLIST_FILE = "TWReverseAuthExample/TWReverseAuthExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -285,10 +349,12 @@
 		};
 		225B756616F0A0AE00D3E3BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B7FA771C65462DBC809C84 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TWReverseAuthExample/TWReverseAuthExample-Prefix.pch";
 				INFOPLIST_FILE = "TWReverseAuthExample/TWReverseAuthExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +379,7 @@
 				225B756616F0A0AE00D3E3BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
