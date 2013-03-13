@@ -21,6 +21,7 @@
 
 -(void)viewDidLoad; {
   [super viewDidLoad];
+  [TWAPIManager registerTwitterAppKey:kTwitterKey andAppSecret:kTwitterSecret];
 
 }
 -(void)viewDidAppear:(BOOL)animated; {

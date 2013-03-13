@@ -23,6 +23,7 @@
 		22FF66FE16F0AA0300F1B5DE /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF66FC16F0AA0300F1B5DE /* TWSignedRequest.m */; };
 		22FF670016F0AB7700F1B5DE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FF66FF16F0AB7700F1B5DE /* Social.framework */; };
 		22FF670216F0AB7D00F1B5DE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FF670116F0AB7D00F1B5DE /* Accounts.framework */; };
+		22FF670D16F0CD8E00F1B5DE /* TWAppCredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF670C16F0CD8E00F1B5DE /* TWAppCredentialStore.m */; };
 		3EA43212773F4A69AE7FF1B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE58D1C8DF204360922E6BE7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		22FF66FF16F0AB7700F1B5DE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		22FF670116F0AB7D00F1B5DE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		22FF670316F0B53B00F1B5DE /* SHApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHApplication.h; sourceTree = "<group>"; };
+		22FF670B16F0CD8E00F1B5DE /* TWAppCredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAppCredentialStore.h; sourceTree = "<group>"; };
+		22FF670C16F0CD8E00F1B5DE /* TWAppCredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAppCredentialStore.m; sourceTree = "<group>"; };
 		AE58D1C8DF204360922E6BE7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +143,8 @@
 				22FF66FA16F0AA0300F1B5DE /* TWAPIManager.m */,
 				22FF66FB16F0AA0300F1B5DE /* TWSignedRequest.h */,
 				22FF66FC16F0AA0300F1B5DE /* TWSignedRequest.m */,
+				22FF670B16F0CD8E00F1B5DE /* TWAppCredentialStore.h */,
+				22FF670C16F0CD8E00F1B5DE /* TWAppCredentialStore.m */,
 			);
 			path = TWReverseAuth;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				225B756116F0A0AE00D3E3BA /* SHViewController.m in Sources */,
 				22FF66FD16F0AA0300F1B5DE /* TWAPIManager.m in Sources */,
 				22FF66FE16F0AA0300F1B5DE /* TWSignedRequest.m in Sources */,
+				22FF670D16F0CD8E00F1B5DE /* TWAppCredentialStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
