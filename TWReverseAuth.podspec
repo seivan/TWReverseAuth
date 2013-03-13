@@ -12,10 +12,7 @@ Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are
                      "Seivan Heidari" => "seivan.heidari@icloud.com",
                      "Nick Walter" => "seivan.heidari@me.com" }
   
-  s.source       = { 
-                    :git => "https://github.com/seivan/TWReverseAuth.git"
-                    ,:tag => '0.1.2'
-                  }
+  s.source       = { :git => "https://github.com/seivan/TWReverseAuth.git", :tag => '0.1.0' }
   
   s.platform     = :ios, '6.0'
 
