@@ -44,10 +44,14 @@
      NSArray *parts = [responseStr componentsSeparatedByString:@"&"];
      NSString *lined = [parts componentsJoinedByString:@"\n"];
      
-     dispatch_async(dispatch_get_main_queue(), ^{
-       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success!" message:lined delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-       [alert show];
-     });
+
+     [[[UIAlertView alloc] initWithTitle:@"Success!"
+                                 message:lined
+                                delegate:nil
+                       cancelButtonTitle:@"OK"
+                       otherButtonTitles:nil] show];
+
+
    }
  }];
 }
