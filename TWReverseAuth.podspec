@@ -14,7 +14,7 @@ Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are
   
   s.source       = { :git => "https://github.com/seivan/TWReverseAuth.git", :tag => '0.1.0' }
   
-  s.platform     = :ios #, '6.0'
+  s.platform     = :ios, '6.0'
 
   s.source_files = 'TWReverseAuth/**/*.{h,m}'
 
