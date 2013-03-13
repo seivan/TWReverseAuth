@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "TWReverseAuth"
   s.version      = "0.1.0"
-  s.summary      = "OAuth for Twitter using reverse auth and ACAccount"
+  s.summary      = "OAuth for Twitter using reverse auth (use token on server) and ACAccount"
   s.description  = <<-DESC
 Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are usable from the server.
                    DESC
@@ -14,7 +14,7 @@ Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are
   
   s.source       = { 
                     :git => "https://github.com/seivan/TWReverseAuth.git"
-                    #,:tag => '0.1.0'
+                    :tag => '0.1.1'
                   }
   
   s.platform     = :ios, '6.0'
@@ -26,4 +26,5 @@ Authenticate to Twitter and ACAccount with reverse auth and obtain keys that are
   s.requires_arc = true
 
   s.dependency 'OAuthCore', '~>0.0.1'
+  s.dependency 'LUKeychainAccess', '~>1.0.1'
 end

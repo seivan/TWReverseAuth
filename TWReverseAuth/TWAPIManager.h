@@ -44,6 +44,7 @@ typedef void(^ReverseAuthResponseHandler)(NSData *responseData, NSError *error);
 
 @interface TWAPIManager : NSObject
 
++(void)registerTwitterAppKey:(NSString *)theAppKey andAppSecret:(NSString *)theAppSecret;
 /**
  *  Obtains the access token and secret for |account| using either TWRequest or
  *  SLRequest.
