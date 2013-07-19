@@ -3,14 +3,21 @@ PODS:
   - NSData+Base64 (1.0.0)
   - OAuthCore (0.0.1):
     - NSData+Base64
+  - TWReverseAuth (0.1.0):
+    - LUKeychainAccess (~> 1.0.1)
+    - OAuthCore (~> 0.0.1)
 
 DEPENDENCIES:
-  - LUKeychainAccess (~> 1.0.1)
-  - OAuthCore (~> 0.0.1)
+  - TWReverseAuth (from `./`)
+
+EXTERNAL SOURCES:
+  TWReverseAuth:
+    :path: ./
 
 SPEC CHECKSUMS:
   LUKeychainAccess: 6ba22b2e1eec24f9f2fc9c6a9087d5524a58b1a2
-  NSData+Base64: 8b910cb8a64f45daec6fb15936c36a9a911c57ca
+  NSData+Base64: 36c4e5b6479259c1a68866ccd2a8dd385c9744f7
   OAuthCore: 4164eec5e28c68f794953446e68f91054ffe570c
+  TWReverseAuth: 2b975482248b6e6e8118f5b742191b336b74c1c2
 
-COCOAPODS: 0.17.0.rc3
+COCOAPODS: 0.22.2
