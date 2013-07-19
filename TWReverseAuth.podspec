@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "I don't recomend using TWReverseAuth, please use 'pod SHOmniAuthTwitter' instead."
   s.description  = <<-DESC
   #{s.summary.to_s}
-  More information at https://github.com/SHOmniAuth/SHomniauthtwitter
+  More information at https://github.com/SHOmniAuth/SHOmniAuthTwitter
   Get in touch if you need some help.
                    DESC
 
