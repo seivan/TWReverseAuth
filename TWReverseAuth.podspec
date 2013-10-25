@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TWReverseAuth"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "I don't recomend using TWReverseAuth, please use 'pod SHOmniAuthTwitter' instead."
   s.description  = <<-DESC
   #{s.summary.to_s}
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                      "Seivan Heidari" => "seivan.heidari@icloud.com",
                      "Nick Walter" => "seivan.heidari@me.com" }
   
-  s.source       = { :git => "https://github.com/PodFactory/TWReverseAuth.git", :tag => '0.1.0' }
+  s.source       = { :git => "https://github.com/PodFactory/TWReverseAuth.git", :tag => s.version.to_s }
   
   s.platform     = :ios, '6.0'
 
@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'OAuthCore', '~>0.0.1'
-  s.dependency 'LUKeychainAccess', '~>1.0.1'
+  s.dependency 'OAuthCore'
+  s.dependency 'LUKeychainAccess'
   s.post_install do |library_representation|
     puts "#{s.summary.to_s}".yellow
   end
