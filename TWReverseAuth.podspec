@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'OAuthCore'
   s.dependency 'LUKeychainAccess'
-  s.post_install do |library_representation|
-    puts "#{s.summary.to_s}".yellow
-  end
+  # s.post_install do |library_representation|
+  #   puts "#{s.summary.to_s}".yellow
+  # end
 end
