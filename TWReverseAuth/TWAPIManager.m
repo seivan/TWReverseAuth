@@ -34,7 +34,17 @@
 
 typedef void(^TWAPIHandler)(NSData *data, NSError *error);
 
+static NSTimeInterval TWAPIManagerTimeout = 60;
+
 @implementation TWAPIManager
+
++ (void)setTimeOutForRequests:(NSTimeInterval)timeout{
+    TWAPIManagerTimeout = timeout;
+}
+
++ (NSTimeInterval)timeOutForRequests{
+    return  TWAPIManagerTimeout;
+}
 
 +(void)registerTwitterAppKey:(NSString *)theAppKey andAppSecret:(NSString *)theAppSecret; {
   [TWAppCredentialStore registerTwitterAppKey:theAppKey andAppSecret:theAppSecret];
