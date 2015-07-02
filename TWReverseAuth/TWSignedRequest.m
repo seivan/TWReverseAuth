@@ -27,6 +27,7 @@
 #import "OAuthCore.h"
 #import "TWSignedRequest.h"
 #import "TWAppCredentialStore.h"
+#import "TWAPIManager.h"
 
 #define TW_HTTP_METHOD_GET @"GET"
 #define TW_HTTP_METHOD_POST @"POST"
@@ -100,6 +101,7 @@
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc]
                                   initWithURL:_url];
   [request setHTTPMethod:method];
+  [request setTimeoutInterval:[TWAPIManager timeOutForRequests]];
   [request setValue:authorizationHeader
  forHTTPHeaderField:TW_HTTP_HEADER_AUTHORIZATION];
   [request setHTTPBody:bodyData];
